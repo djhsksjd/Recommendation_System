@@ -6,9 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:env": "node scripts/check-env.mjs",
+    "seed:db": "node scripts/seed-database.mjs",
+    "seed:db:clear": "node scripts/seed-database.mjs --clear",
+    "seed:db:dry": "node scripts/seed-database.mjs --dry-run"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
+    "firebase": "^12.7.0",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3"
